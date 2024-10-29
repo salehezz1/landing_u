@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/* start about me section */
+.about-us {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.about-us .about-me {
+    width: 50%;
+}
+.about-us .progress {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+.about-us .progress .progress-bar {
+    position: relative;
+    z-index: 2;
+    overflow: visible !important; 
+}
+.about-us .progress .progress-bar::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid brown;
+    background-color: rgb(202, 167, 167);
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    z-index: 3;
+  }
+/* end about me section */
+/* start services section */
+.services {
+    margin-top: 100px;
+}
+.services .info {
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+.services .info h1 , .services .info p {
+    text-align: center;
+}
+.services .service{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .service div{
+    background-color: white;
+    color: black;
+    width: 23%;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+/* end services section */
+/* start projects section */
+
+.projects {
+    margin-top: 100px;
+}
+.projects .info {
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+.projects .info h1 , .projects .info p {
+    text-align: center;
+}
+.projects .select-project{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.projects .select-project div {
+    padding: 10px;
+    margin: 50px 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.projects .select-project div.active{
+    background-color: rgb(235, 128, 5);
+    color: white;
+    cursor: pointer;
+}
+.projects .my-projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.projects .my-projects div{
+    margin: 50px 10px;
+}
+.projects .my-projects div p ,.projects .my-projects div h6{
+    font-size: small;
+}
+.projects .my-projects div p{
+    color: brown;
+}
+/* end projects section */
+/* start contact */
+.contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #0000;
+}
+.contact .contaner .info{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.contact .contaner .info .label{
+    font-size: 35px;
+    font-weight: 800;
+    color: #444;
+    letter-spacing: -2;
+    margin-bottom: 15px;
+}
+.contact .contaner .info .link{
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: #10cab7;
+    text-decoration: none;
+}
+.contact .contaner .info .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.contact .contaner .info .social i{
+    margin-left: 10px;
+    color: #444;
+}
+.contaner p{
+    text-align: center;
+}
+.special-heading{
+    color: #d3d0d3;
+    font-weight: 800;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -3px;
+}
+footer {
+    background-color: #444;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+footer span{
+    color: #10cab7;
+}
+
+
+
+.contaner{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* small  */
+@media (min-width: 768px) {
+    .contaner{
+        width: 750px;
+    }
+}
+/* made*/
+@media (min-width: 992px) {
+    .contaner{
+        width: 970px;
+    }
+}
+/* large*/
+@media (min-width: 1200px) {
+    .contaner{
+        width: 1170px;
+    }
+}
+
+
+
+/* end contact */
