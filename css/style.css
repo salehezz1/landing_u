@@ -1,8 +1,101 @@
-*{
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* الهيدر */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
 
+/* زر القائمة (الهامبرجر) */
+header button {
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* خطوط زر القائمة */
+header button div {
+    margin: 4px 0;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+/* الشاشات الكبيرة */
+@media (min-width: 992px) {
+    #header {
+        display: block;
+    }
+    header button {
+        display: none;
+    }
+}
+
+/* الشاشات المتوسطة */
+@media (max-width: 991px) {
+    #header {
+        display: none;
+    }
+    header button {
+        display: inline-block;
+    }
+}
+
+/* الشاشات الصغيرة (موبايل) */
+@media (max-width: 576px) {
+    .about-us .about-me,
+    .services .info,
+    .projects .info,
+    .contact .contaner {
+        width: 100%;
+    }
+
+    .services .service div,
+    .projects .my-projects div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .special-heading {
+        font-size: 50px;
+    }
+}
+
+/* الكونتينر */
+.contaner {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* للشاشات المتوسطة */
+@media (min-width: 768px) {
+    .contaner {
+        max-width: 750px;
+    }
+}
+
+/* للشاشات الكبيرة */
+@media (min-width: 992px) {
+    .contaner {
+        max-width: 970px;
+    }
+}
+
+/* للشاشات الأكبر */
+@media (min-width: 1200px) {
+    .contaner {
+        max-width: 1170px;
+    }
+}
 /* start about me section */
 .about-us {
     margin-bottom: 100px;
@@ -33,7 +126,7 @@
     right: -10px;
     z-index: 3;
   }
-/* end about me section */
+  /* style of respons about me */
 /* start services section */
 .services {
     margin-top: 100px;
@@ -164,35 +257,6 @@ footer {
 footer span{
     color: #10cab7;
 }
-
-
-
-.contaner{
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-/* small  */
-@media (min-width: 768px) {
-    .contaner{
-        width: 750px;
-    }
-}
-/* made*/
-@media (min-width: 992px) {
-    .contaner{
-        width: 970px;
-    }
-}
-/* large*/
-@media (min-width: 1200px) {
-    .contaner{
-        width: 1170px;
-    }
-}
-
 
 
 /* end contact */
