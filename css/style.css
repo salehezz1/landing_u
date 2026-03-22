@@ -69,7 +69,7 @@ header button div {
 }
 
 /* الكونتينر */
-.contaner {
+.container {
     width: 100%;
     max-width: 600px;
     margin: auto;
@@ -78,21 +78,21 @@ header button div {
 
 /* للشاشات المتوسطة */
 @media (min-width: 768px) {
-    .contaner {
+    .container {
         max-width: 750px;
     }
 }
 
 /* للشاشات الكبيرة */
 @media (min-width: 992px) {
-    .contaner {
+    .container {
         max-width: 970px;
     }
 }
 
 /* للشاشات الأكبر */
 @media (min-width: 1200px) {
-    .contaner {
+    .container {
         max-width: 1170px;
     }
 }
@@ -208,36 +208,36 @@ header button div {
     padding-bottom: 60px;
     background-color: #0000;
 }
-.contact .contaner .info{
+.contact .container .info{
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
 }
-.contact .contaner .info .label{
+.contact .container .info .label{
     font-size: 35px;
     font-weight: 800;
     color: #444;
     letter-spacing: -2;
     margin-bottom: 15px;
 }
-.contact .contaner .info .link{
+.contact .container .info .link{
     display: block;
     font-size: 35px;
     font-weight: 800;
     color: #10cab7;
     text-decoration: none;
 }
-.contact .contaner .info .social{
+.contact .container .info .social{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     font-size: 16px;
 }
-.contact .contaner .info .social i{
+.contact .container .info .social i{
     margin-left: 10px;
     color: #444;
 }
-.contaner p{
+.container p{
     text-align: center;
 }
 .special-heading{
